@@ -2,7 +2,7 @@ from flask import Flask,render_template, request
 import pickle
 
 app=Flask(__name__)
-model=pickle.load(open("iris_model.sav",'rb'))
+model=pickle.load(open("iris_model.pkl",'rb'))
 @app.route('/')
 def home():
     result=''
