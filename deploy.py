@@ -5,7 +5,6 @@ import joblib
 import os
 
 model = joblib.load('iris_model.pkl')
-scaler = joblib.load('scaler.save')
 
 app = Flask(__name__)
 
