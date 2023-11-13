@@ -1,10 +1,11 @@
 from flask import Flask, request, render_template
 import numpy as np
 import sklearn.preprocessing as preprocessing
-import joblib as joblib
+import joblib
 import os
 
 model = joblib.load('iris_model.pkl')
+scaler = joblib.load('scaler.save')
 
 app = Flask(__name__)
 

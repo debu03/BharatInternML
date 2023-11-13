@@ -7,6 +7,6 @@ from sklearn.exceptions import InconsistentVersionWarning
 warnings.simplefilter("error", InconsistentVersionWarning)
 
 try:
-    model = pickle.load(open('saved_model.pkl', 'rb'))
+    model = pickle.load(open('iris_model.pkl', 'rb'))
 except InconsistentVersionWarning as w:
     print(w.original_sklearn_version)
