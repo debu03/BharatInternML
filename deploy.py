@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 import joblib as joblib
 import os
 
-model = joblib.load('saved_model1.pkl')
+model = joblib.load('iris_model.pkl')
 scaler = joblib.load('scaler.save')
 
 app = Flask(__name__)
