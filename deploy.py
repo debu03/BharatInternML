@@ -6,6 +6,7 @@ import os
 
 model = joblib.load('iris_model.pkl')
 
+
 app = Flask(__name__)
 
 IMG_FOLDER = os.path.join('static', 'IMG')
