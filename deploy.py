@@ -5,15 +5,12 @@ import os
 
 app = Flask(__name__)
 
-# Load the scaler if it was used during model training
-# scaler = joblib.load('scaler.pkl')  # Uncomment this line if scaler was used
 
-# Load the model and any other necessary preprocessing steps
 try:
     model = joblib.load('iris_model.pkl')
 except Exception as e:
     print(f"Error loading the model: {e}")
-    model = None  # Assigning None if model loading fails
+
 
 IMG_FOLDER = os.path.join('static', 'IMG')
 app.config['UPLOAD_FOLDER'] = IMG_FOLDER
